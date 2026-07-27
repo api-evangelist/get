@@ -1,7 +1,27 @@
 aid: get
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/get.png
 name: Get
-description: Get is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Get (useget.com) is a Singapore-based fintech company offering a mobile banking and
+  financial-literacy platform for children, teens, and their families. The Get app pairs
+  separate kid and parent accounts with prepaid Visa cards, parental spending controls,
+  automated weekly allowances, a chore-based reward system, real-time spending analytics,
+  and savings-goal folders, so young people can practice using real money tools in a safe,
+  supervised environment. Get sells consumer subscription tiers (Get Core and Get Plus) plus
+  a family account, and operates under a Payment Services exemption in Singapore. No public
+  API, developer portal, or machine-readable specification is published at this time; this
+  profile is maintained as a company record in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/get/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fintech
+- Banking
+- Financial Literacy
+- Prepaid Cards
+- Family
+- Payments
+- Singapore
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/get-domain-security.yml
 - type: Website
   url: https://useget.com
+- type: Blog
+  url: https://useget.com/get-blog
+- type: Support
+  url: https://useget.com/personal/help/personal-faq
+- type: TermsOfService
+  url: https://useget.com/personal/personal-legal/personal-terms-of-service
+- type: PrivacyPolicy
+  url: https://useget.com/personal/personal-legal/privacy-policy
+- type: SignUp
+  url: https://useget.com/sg/sg-app-download-link-cta
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
